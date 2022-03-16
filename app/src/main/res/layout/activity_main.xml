@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor para Conversão:"
+        android:textSize="25sp"
+        android:id="@+id/tvlogin"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="não se esqueça de colocar a moeda abaixo!"
+        android:id="@+id/etvalor"
+        android:layout_margin="20dp"
+        android:inputType="numberDecimal" />
+
+    <CheckBox
+        android:id="@+id/cbreal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REAL (BR)" />
+
+    <CheckBox
+        android:id="@+id/cbpeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PESO (UY)" />
+
+    <CheckBox
+        android:id="@+id/cbdolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DÓLAR (USA)" />
+
+    <Button
+        android:id="@+id/btreal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter para R$"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btpeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter para PESO (UY)"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btdolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converter para dólar (usa)"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:textSize="25sp"
+        android:id="@+id/tvresultado"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>
